@@ -10,17 +10,17 @@
 }
 
 .main-cards-container {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     width: 98%;
     height: 47%;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 2%;
+    column-gap: 1%;
     row-gap: 2%;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    padding: 0;
 }
 
 .main-graphs-container {
@@ -28,13 +28,15 @@
     width: 98%;
     height: 47%;
     border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
 }
 
 .main-card {
-    height: 40%;
-    width: 22%;
+    height: 48%;
+    width: 23.3%;
     border-radius: 20px;
     border: 1px solid black;
     text-align: center;
-    align-content: center;
+    background-color: rgb(255, 255, 255);
 }

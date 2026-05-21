@@ -2,4 +2,31 @@
     background-color: maroon;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-heading-container {
+    justify-self: start;
+    height: 300px;
+    background-color: limegreen;
+}
+
+.sidebar-navs-container {
+    justify-self: center;
+    height: 100px;
+    background-color: pink;
+}
+
+.sidebar-footing-container {
+    justify-self: end;
+    height: 100px;
+    background-color: black;
+}
+
+.header-banner {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* background-color: pink; */
 }

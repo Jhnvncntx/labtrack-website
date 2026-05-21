@@ -1,8 +1,9 @@
-body, .root {
+body, #root {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
   background-color: rgb(255, 255, 255);
   font-family: sans-serif;
 }
