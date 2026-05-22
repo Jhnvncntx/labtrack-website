@@ -6,14 +6,9 @@ import "./MainPage.css";
 export function MainPage() {
   return (
     <div className="main-page-container">
-      <div className="sidebar-holder">
-        <Sidebar />
-      </div>
-
-      <div className="main-header-holder">
-        <Header />
-        <Dashboard />
-      </div>
+      <Sidebar>Sidebar</Sidebar>
+      <Header>Header</Header>
+      <Dashboard>Dashboard</Dashboard>
     </div>
   );
 }
