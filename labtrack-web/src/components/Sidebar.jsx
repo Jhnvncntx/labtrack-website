@@ -61,7 +61,7 @@ export function Sidebar({ activeTab, setActiveTab }) {
           <span className="logout-text">Exit</span>
         </div>
 
-        <div className="settings-btn-container" onClick={""}>
+        <div className="settings-btn-container" onClick={() => {}}>
           <img className="settings-image" src={settingsImage} />
         </div>
       </div>

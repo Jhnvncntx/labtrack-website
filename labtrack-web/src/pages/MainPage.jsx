@@ -8,7 +8,7 @@ import { Users } from "../components/Users";
 import "./MainPage.css";
 
 export function MainPage() {
-  const [activeTab, setActiveTab] = useState();
+  const [activeTab, setActiveTab] = useState("dashboard");
 
   const renderMainContent = () => {
     switch (activeTab) {
