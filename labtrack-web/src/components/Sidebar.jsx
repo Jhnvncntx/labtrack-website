@@ -8,7 +8,7 @@ import equipmentsImage from "../assets/Equipments.png";
 import recordsImage from "../assets/Records.png";
 import usersImage from "../assets/Users.png";
 
-export function Sidebar() {
+export function Sidebar({ activeTab, setActiveTab }) {
   const navigate = useNavigate();
 
   function gotoLogin() {
@@ -18,27 +18,38 @@ export function Sidebar() {
   return (
     <div className="sidebar-container">
       <div className="sidebar-heading-container">
-        <img
-          className="header-banner"
-          src={bannerImage}
-          alt="This is the banner."
-        />
+        <img className="header-banner" src={bannerImage} alt="Banner." />
       </div>
 
       <div className="sidebar-navs-container">
-        <div className="dashboard-nav sidebar-nav">
+        <div
+          className={`sidebar-nav ${activeTab == "dashboard" ? "active-nav" : ""}`}
+          onClick={() => setActiveTab("dashboard")}
+        >
           <img className="navs-image" src={dashboardImage} />
           <span>Dashboard</span>
         </div>
-        <div className="equipments-nav sidebar-nav">
+
+        <div
+          className={`sidebar-nav ${activeTab == "equipments" ? "active-nav" : ""}`}
+          onClick={() => setActiveTab("equipments")}
+        >
           <img className="navs-image" src={equipmentsImage} />
           <span>Equipments</span>
         </div>
-        <div className="records-nav sidebar-nav">
+
+        <div
+          className={`sidebar-nav ${activeTab == "records" ? "active-nav" : ""}`}
+          onClick={() => setActiveTab("records")}
+        >
           <img className="navs-image" src={recordsImage} />
           <span>Records</span>
         </div>
-        <div className="users-nav sidebar-nav">
+
+        <div
+          className={`sidebar-nav ${activeTab == "users" ? "active-nav" : ""}`}
+          onClick={() => setActiveTab("users")}
+        >
           <img className="navs-image" src={usersImage} />
           <span>Users</span>
         </div>

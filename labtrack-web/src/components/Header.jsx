@@ -1,11 +1,18 @@
 import "./Header.css";
 import userProfile from "../assets/user-profile.png";
 
-export function Header() {
+export function Header({ activeTab }) {
+  const titles = {
+    dashboard: "DASHBOARD",
+    equipments: "EQUIPMENTS",
+    records: "RECORDS",
+    users: "USERS",
+  };
+
   return (
     <div className="header-container">
       <div className="header-title-container">
-        <h1 className="sub-page-title">DASHBOARD</h1>
+        <h1 className="sub-page-title">{titles[activeTab] || "DASHBOARD"}</h1>
       </div>
 
       <div className="header-user-info-container">

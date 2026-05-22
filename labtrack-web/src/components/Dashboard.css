@@ -1,6 +1,6 @@
-.main-container {   
+.dashboard-container {   
     width: 100%;
-    background-color: rgb(224, 224, 224);
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +8,7 @@
     row-gap: 2%;
 }
 
-.main-cards-container {
+.dashboard-cards-container {
     /* background-color: rgb(255, 255, 255); */
     width: 98%;
     height: 47%;
@@ -22,7 +22,7 @@
     padding: 0;
 }
 
-.main-graphs-container {
+.dashboard-graphs-container {
     background-color: rgb(255, 255, 255);
     width: 98%;
     height: 47%;
@@ -31,7 +31,7 @@
     text-align: center;
 }
 
-.main-card {
+.dashboard-card {
     height: 48%;
     width: 23.3%;
     border-radius: 20px;
