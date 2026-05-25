@@ -24,11 +24,13 @@
     padding-right: 20px;
 }
 .user-full-name {
+    width: 100%;
     font-size: 2rem;
     font-weight: 700;
     text-align: end;
 }
 .user-role {
+    width: 100%;
     font-size: 1.5rem;
     font-weight: 400;
     text-align: end;
