@@ -14,7 +14,7 @@ export function EquipmentsTab() {
           <option value="forRepair">For Repair</option>
           <option value="forReplacement">For Replacement</option>
         </select>
-        <button>+ Add Equipment</button>
+        <button className="add-eq">+ Add Equipment</button>
       </div>
       <div className="table-container">
         <div className="table-heading">

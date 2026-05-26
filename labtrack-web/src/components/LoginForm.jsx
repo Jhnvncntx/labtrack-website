@@ -67,7 +67,7 @@ export function LoginForm() {
           <label>Username</label>
           <input
             ref={usernameRef}
-            className={inputClass}
+            className={`login-input ${inputClass}`}
             type="text"
             id="usernameInput"
             placeholder="iamdelta67"
@@ -81,7 +81,8 @@ export function LoginForm() {
           <label>Password</label>
           <input
             ref={passwordRef}
-            className={inputClass}
+            className={`login-input ${inputClass}`}
+            login-input
             type="password"
             id="passwordInput"
             placeholder="enter your password"
