@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Sidebar } from "../components/Sidebar";
 import { Header } from "../components/Header";
 import { Dashboard } from "../components/Dashboard";
-import { Equipments } from "../components/Equipments";
+import { EquipmentsTab } from "../components/EquipmentsTab";
 import { Records } from "../components/Records";
 import { Users } from "../components/Users";
 import "./MainPage.css";
@@ -15,7 +15,7 @@ export function MainPage() {
       case "dashboard":
         return <Dashboard />;
       case "equipments":
-        return <Equipments />;
+        return <EquipmentsTab />;
       case "records":
         return <Records />;
       case "users":
