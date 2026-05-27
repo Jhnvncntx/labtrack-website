@@ -71,7 +71,7 @@ export function LoginForm() {
             className={`login-input ${inputClass}`}
             type="text"
             id="usernameInput"
-            placeholder="iamdelta67"
+            placeholder="enter your username"
             value={username}
             onChange={(event) => {
               setMessage("");
