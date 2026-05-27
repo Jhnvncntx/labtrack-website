@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Header.css";
 import userProfile from "../assets/user-profile.png";
 
@@ -9,6 +10,11 @@ export function Header({ activeTab }) {
     users: "USERS",
   };
 
+  const [user] = useState(() => {
+    const storedUser = localStorage.getItem("user");
+    return storedUser ? JSON.parse(storedUser) : null;
+  });
+
   return (
     <div className="header-container">
       <div className="header-title-container">
@@ -16,8 +22,8 @@ export function Header({ activeTab }) {
       </div>
 
       <div className="header-user-info-container">
-        <h3 className="user-full-name">Jhon Vincent Adolfo</h3>
-        <p className="user-role">Administrator</p>
+        <h3 className="user-full-name">{user?.name}</h3>
+        <p className="user-role">{user?.role}</p>
       </div>
 
       <div className="header-user-profile-container">

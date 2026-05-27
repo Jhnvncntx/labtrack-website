@@ -40,6 +40,7 @@ export function LoginForm() {
       );
 
       if (foundUser) {
+        localStorage.setItem("user", JSON.stringify(foundUser));
         navigate("/main");
       } else {
         setInputClass("invalid");
@@ -82,7 +83,6 @@ export function LoginForm() {
           <input
             ref={passwordRef}
             className={`login-input ${inputClass}`}
-            login-input
             type="password"
             id="passwordInput"
             placeholder="enter your password"

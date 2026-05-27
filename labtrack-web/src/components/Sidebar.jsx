@@ -12,6 +12,7 @@ export function Sidebar({ activeTab, setActiveTab }) {
   const navigate = useNavigate();
 
   function gotoLogin() {
+    localStorage.removeItem("user");
     navigate("/");
   }
 
