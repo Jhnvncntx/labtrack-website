@@ -1,5 +1,6 @@
 import equipmentsData from "../data/equipments.js";
 import { EquipmentData } from "./EquipmentData";
+import { Overlay } from "./overlays/Overlay.jsx";
 import "./EquipmentsTab.css";
 import { useState } from "react";
 
@@ -7,6 +8,8 @@ console.log(equipmentsData);
 export function EquipmentsTab() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
+  // const [items, setItems] = useState(equipmentsData);
+  const [showOverlay, setShowOverlay] = useState(false);
 
   const equipments = equipmentsData.filter((item) => {
     const searchInput = search.toLowerCase();
@@ -18,13 +21,26 @@ export function EquipmentsTab() {
   });
 
   function addEquipment() {
-    () => {};
+    // const newItem = {
+    //   id: 1,
+    //   name: "Inverted Fluorescence Scope",
+    //   category: "Optics",
+    //   location: "Dark Room",
+    //   dateAcquired: "2023-01-15",
+    //   efficiencyRate: 98.5,
+    //   status: "functional",
+    //   totalUsageHours: 120.5,
+    // };
+    setShowOverlay(true);
+
+    // setItems([...items, newItem]);
   }
 
   return (
     <div className="equipments-container">
       <div className="search-category-btn-container">
         <input
+          className="eq-search-input"
           type="text"
           placeholder="search equipment"
           onChange={(e) => setSearch(e.target.value)}
@@ -60,6 +76,11 @@ export function EquipmentsTab() {
           })}
         </div>
       </div>
+      <Overlay
+        show={showOverlay}
+        onCloseOverlay={() => setShowOverlay(false)}
+      />
+      ;
     </div>
   );
 }

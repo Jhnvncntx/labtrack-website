@@ -1,0 +1,16 @@
+.overlay-container {
+  display: none;
+}
+.show-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+}

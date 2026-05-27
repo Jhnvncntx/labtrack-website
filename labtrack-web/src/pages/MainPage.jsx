@@ -5,6 +5,7 @@ import { Dashboard } from "../components/Dashboard";
 import { EquipmentsTab } from "../components/EquipmentsTab";
 import { Records } from "../components/Records";
 import { Users } from "../components/Users";
+import { Overlay } from "../components/overlays/Overlay";
 import "./MainPage.css";
 
 export function MainPage() {
@@ -26,10 +27,13 @@ export function MainPage() {
   };
 
   return (
-    <div className="main-page-container">
-      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-      <Header activeTab={activeTab} />
-      <div className="main-container">{renderMainContent()}</div>
-    </div>
+    <>
+      <div className="main-page-container">
+        <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+        <Header activeTab={activeTab} />
+        <div className="main-container">{renderMainContent()}</div>
+      </div>
+      <Overlay />
+    </>
   );
 }

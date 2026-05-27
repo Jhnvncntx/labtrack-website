@@ -65,7 +65,7 @@ export function LoginForm() {
         <h3>Welcome back!</h3>
         <p className="welcome-description">Sign in to access the system.</p>
         <div className="user-pass-container">
-          <label>Username</label>
+          <label className="login-label">Username</label>
           <input
             ref={usernameRef}
             className={`login-input ${inputClass}`}
@@ -79,7 +79,7 @@ export function LoginForm() {
               setUsername(event.target.value);
             }}
           />
-          <label>Password</label>
+          <label className="login-label">Password</label>
           <input
             ref={passwordRef}
             className={`login-input ${inputClass}`}

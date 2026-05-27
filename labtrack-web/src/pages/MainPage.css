@@ -1,23 +1,23 @@
 .main-page-container {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: 100px 1fr;
-    grid-template-areas:
-        "sidebar header"
-        "sidebar main";
-    background-color: rgba(255, 255, 255, 0.479);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+  background-color: rgba(255, 255, 255, 0.479);
 }
 
 .sidebar-container {
-    grid-area: sidebar;
+  grid-area: sidebar;
 }
 
 .header-container {
-    grid-area: header;
+  grid-area: header;
 }
 
 .main-container {
-    grid-area: main;
-    background-color: rgb(224, 224, 224);
+  grid-area: main;
+  background-color: rgb(224, 224, 224);
 }
