@@ -6,7 +6,7 @@ const equipmentsData = [
     location: "Dark Room",
     dateAcquired: "2023-01-15",
     efficiencyRate: 98.5,
-    status: "Functional",
+    status: "functional",
     totalUsageHours: 120.5,
   },
   {
@@ -16,7 +16,7 @@ const equipmentsData = [
     location: "Bio-Chem Lab",
     dateAcquired: "2023-05-10",
     efficiencyRate: 94.0,
-    status: "Functional",
+    status: "functional",
     totalUsageHours: 89.0,
   },
   {
@@ -26,7 +26,7 @@ const equipmentsData = [
     location: "Bio-Chem Lab",
     dateAcquired: "2023-11-02",
     efficiencyRate: 100.0,
-    status: "Functional",
+    status: "functional",
     totalUsageHours: 4.5,
   },
   {
@@ -36,7 +36,7 @@ const equipmentsData = [
     location: "Organic Lab",
     dateAcquired: "2023-04-10",
     efficiencyRate: 97.0,
-    status: "Functional",
+    status: "functional",
     totalUsageHours: 32.0,
   },
   {
@@ -46,7 +46,7 @@ const equipmentsData = [
     location: "Cell Culture",
     dateAcquired: "2023-07-20",
     efficiencyRate: 96.0,
-    status: "Functional",
+    status: "functional",
     totalUsageHours: 256.2,
   },
   {
@@ -56,7 +56,7 @@ const equipmentsData = [
     location: "General Lab",
     dateAcquired: "2022-06-12",
     efficiencyRate: 91.0,
-    status: "Functional",
+    status: "functional",
     totalUsageHours: 51.0,
   },
   {
@@ -66,7 +66,7 @@ const equipmentsData = [
     location: "Geology Lab",
     dateAcquired: "2021-12-01",
     efficiencyRate: 30.0,
-    status: "For Replacement",
+    status: "forReplacement",
     totalUsageHours: 150.0,
   },
   {
@@ -76,7 +76,7 @@ const equipmentsData = [
     location: "Genetics Lab",
     dateAcquired: "2022-02-28",
     efficiencyRate: 80.0,
-    status: "For Repair",
+    status: "forRepair",
     totalUsageHours: 110.0,
   },
   {
@@ -86,7 +86,7 @@ const equipmentsData = [
     location: "Material Science",
     dateAcquired: "2021-11-11",
     efficiencyRate: 58,
-    status: "For Repair",
+    status: "forRepair",
     totalUsageHours: 240,
   },
   {
@@ -96,7 +96,7 @@ const equipmentsData = [
     location: "Genetics Lab",
     dateAcquired: "2023-10-10",
     efficiencyRate: 93.0,
-    status: "Functional",
+    status: "functional",
     totalUsageHours: 25,
   },
 ];

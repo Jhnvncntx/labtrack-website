@@ -1,0 +1,49 @@
+.equipment-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.equipment-row .eq-data {
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  background-color: rgb(247, 215, 220);
+}
+.equipment-row:hover .eq-data {
+  background-color: rgb(243, 184, 193);
+}
+.eq-id {
+  text-align: right;
+}
+.eq-name {
+  text-align: left;
+}
+.eq-categ {
+  text-align: center;
+}
+.eq-loc {
+  text-align: center;
+}
+.eq-dateacq {
+  text-align: left;
+}
+.eq-eff {
+  text-align: left;
+}
+.eq-status {
+  text-align: center;
+}
+.eq-btn {
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  text-align: center;
+  background-color: rgb(145, 28, 28);
+}
+.eq-btn:hover {
+  background-color: rgba(145, 28, 28, 0.8);
+}
