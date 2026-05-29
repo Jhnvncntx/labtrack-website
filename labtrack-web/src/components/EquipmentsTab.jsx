@@ -72,9 +72,13 @@ export function EquipmentsTab() {
           <div className="2"></div>
         </div>
         <div className="table-body">
-          {equipments.map((item) => {
-            return <EquipmentData key={item.id} item={item} />;
-          })}
+          {equipments.length === 0 ? (
+            <h2 className="no-eq-message">No equipments to show.</h2>
+          ) : (
+            equipments.map((item) => {
+              return <EquipmentData key={item.id} item={item} />;
+            })
+          )}
         </div>
       </div>
       <Overlay
