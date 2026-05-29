@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.1.0](https://github.com/Jhnvncntx/labtrack-website/compare/v1.0.0...v1.1.0) (2026-05-29)
+
+
+### Features
+
+* **UI:** Added a message when no items matches the filter in equipment tab ([3318080](https://github.com/Jhnvncntx/labtrack-website/commit/33180801c82c9b9de8db2115f0f5ad27a3723013))
+* **UI:** Added design for EquipmentDetails modal (for AddEquipment) ([238bcd9](https://github.com/Jhnvncntx/labtrack-website/commit/238bcd97b359322e2646bd9bd58444c55ca47de7))
+* **UI:** Added formatDate function to change the date display. ([ce5cb7b](https://github.com/Jhnvncntx/labtrack-website/commit/ce5cb7bda1dc9c6bccc37dc334e723ed56f1b5bb))
+
+
+### Bug Fixes
+
+* Move static.json inside labtrack-web folder ([02bb4d0](https://github.com/Jhnvncntx/labtrack-website/commit/02bb4d0d838f4bbb7d481d29ff0febc3e0fae79f))
+* **Route:** Added _redirect file for routing fixes ([09d4816](https://github.com/Jhnvncntx/labtrack-website/commit/09d4816dfb04c13038bb5d9bc52e243b6235b077))
+* **Route:** Fixed the router bug ([a4a481b](https://github.com/Jhnvncntx/labtrack-website/commit/a4a481b2d9c41603ed51cc2b91047d5335bf1472))
+* **Route:** removed static.json for testing ([2a2b350](https://github.com/Jhnvncntx/labtrack-website/commit/2a2b3508e724e2a8f203450adfe9168857795183))
+* **UI:** Changed the username placeholder ([1258053](https://github.com/Jhnvncntx/labtrack-website/commit/1258053c26805e02390c7b97abfbe6be302ffba0))
+
 ## 1.0.0 (2026-05-27)
 
 
