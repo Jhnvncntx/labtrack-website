@@ -41,7 +41,7 @@ export function LoginForm() {
 
       if (foundUser) {
         localStorage.setItem("user", JSON.stringify(foundUser));
-        navigate("/main");
+        navigate("/admin");
       } else {
         setInputClass("invalid");
         setUsername("");
