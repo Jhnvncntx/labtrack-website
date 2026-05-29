@@ -6,9 +6,9 @@ import { EquipmentsTab } from "../components/EquipmentsTab";
 import { Records } from "../components/Records";
 import { Users } from "../components/Users";
 import { Overlay } from "../components/overlays/Overlay";
-import "./MainPage.css";
+import "./AdminPage.css";
 
-export function MainPage() {
+export function AdminPage() {
   const [activeTab, setActiveTab] = useState("dashboard");
 
   const renderMainContent = () => {

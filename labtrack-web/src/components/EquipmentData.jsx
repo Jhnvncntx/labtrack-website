@@ -1,3 +1,4 @@
+import { formatDate } from "./utils/formatDate";
 import "./EquipmentData.css";
 
 export function EquipmentData({ item }) {
@@ -16,7 +17,9 @@ export function EquipmentData({ item }) {
         <div className="w-25 eq-name eq-data">{item.name}</div>
         <div className="w-10 eq-categ eq-data">{item.category}</div>
         <div className="w-15 eq-loc eq-data">{item.location}</div>
-        <div className="w-10 eq-dateacq eq-data">{item.dateAcquired}</div>
+        <div className="w-10 eq-dateacq eq-data">
+          {formatDate(item.dateAcquired)}
+        </div>
         <div className="w-6 eq-eff eq-data">{item.efficiencyRate}</div>
         <div className="w-11 eq-status eq-data">{status(item)}</div>
         <div className="w-7 eq-btn1 eq-btn">View</div>

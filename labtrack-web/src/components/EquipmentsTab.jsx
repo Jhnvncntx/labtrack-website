@@ -52,6 +52,7 @@ export function EquipmentsTab() {
           <option value="functional">Functional</option>
           <option value="forRepair">For Repair</option>
           <option value="forReplacement">For Replacement</option>
+          <option value="inUse">In Use</option>
         </select>
         <button className="add-eq" onClick={addEquipment}>
           + Add Equipment
